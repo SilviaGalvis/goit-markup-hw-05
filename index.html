@@ -68,20 +68,18 @@
           </ul>
         </header>
         <!-- Main -->
-
         <section class="box">
-          <!-- Ventana modal, por defecto no visiblel -->
-          <div id="ventanaModal" class="modal">
-            <div class="modal-content">
-              <span class="cerrar">&times;</span>
-              <h2>Ventana modal</h2>
-              <p>Esto es el texto de la ventana</p>
-            </div>
-          </div>
           <h1 class="title1">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button id="abrirModal" class="button-banner" type="button">
+          <button data-modal-open class="button-banner" type="button">
             Solicite nuestro servicio
           </button>
+          <!-- ventana modal -->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>Contenido Modal</p>
+              <button data-modal-open>X</button>
+            </div>
+          </div>
         </section>
         <section class="section-list">
           <ul class="list-text">
@@ -399,6 +397,6 @@
         </footer>
       </div>
     </main>
-    <script src="./js/modal.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
