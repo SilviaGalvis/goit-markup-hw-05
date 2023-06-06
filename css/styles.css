@@ -104,6 +104,11 @@
   justify-content: center;
 }
 
+.p-emergent {
+  color: #ffffff;
+  padding: 63px 24px;
+}
+
 body {
   font-family: 'Roboto', 'Arial', Sans-serif;
   color: var(--color);
@@ -166,6 +171,15 @@ h5 {
 
 .current {
   color: var(--brand-color);
+}
+
+.current::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  position: absolute;
+  margin: 43px 20px 50px -55px;
+  background-color: #2196f3;
 }
 
 .button-banner {
